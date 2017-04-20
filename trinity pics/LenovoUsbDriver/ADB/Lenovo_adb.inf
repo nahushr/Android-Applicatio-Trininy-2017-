@@ -1,0 +1,1600 @@
+;
+; Android WinUsb driver installation.
+;
+[Version]
+Signature           = "$Windows NT$"
+Class               = AndroidUsbDeviceClass
+ClassGuid           = {3F966BD9-FA04-4ec5-991C-D326973B5128}
+Provider            = %ProviderName%
+; month/day/year
+DriverVer           = 04/25/2016,7.0.0000.00001
+CatalogFile.NTx86   = androidwinusb86.cat
+CatalogFile.NTamd64 = androidwinusba64.cat
+
+[ClassInstall32]
+Addreg = AndroidWinUsbClassReg
+
+[AndroidWinUsbClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-1
+
+
+[Manufacturer]
+%ProviderName% = Google, NTx86, NTamd64
+
+
+[Google.NTx86]
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;vendor ADB Interface
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0005
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0005&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0C01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0C02&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0C03&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_2003&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_2006&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_200A&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_2035&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_201D&MI_01
+;Lenovo ADB Interface
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7437&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7498&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749B&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749D&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74A4&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7437
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7437&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7498
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7498&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7499&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749B
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749B&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_2006&PID_0C03&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_9025&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_2006&PID_0005
+%CompositeAdbInterface%     = USB_Install, USB\VID_2006&PID_0005&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_18D1&PID_D00D
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7495&MI_00
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74EC&MI_00
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74F6&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7509&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_750A&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_750D&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_0001&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_9091&MI_03
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_9039&MI_01      
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history end NTx86;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+; Shellw rndis,diag,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_05C6&PID_902D&MI_03
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory end NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;generic mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7435&MI_01
+;generic mass_storage,adb,acm
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74ED&MI_01
+;generic adb,diag,modem,nmea
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7501&MI_00
+;generic adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7513&MI_00
+;generic mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74F8&MI_01
+;generic ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74F9&MI_01
+;generic rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7500&MI_02
+;generic bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_750E&MI_01
+;generic mtp,adb,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74EE&MI_01
+;generic mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7718&MI_02
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic end NTx86;;;;;;;;;;;;;;;;;;;;;;;;; 
+      
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; S6000L mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E0&MI_01
+; S6000L ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E6&MI_01
+; S6000L rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75EA&MI_02
+; S6000L mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E4&MI_02
+; S6000L bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7629&MI_01
+; S6000L mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E2&MI_01
+
+; S5000 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76E5&MI_01
+; S5000 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76EB&MI_01
+; S5000 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76ED&MI_02
+; S5000 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76E9&MI_02
+; S5000 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76EF&MI_01
+; S5000 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76E7&MI_01
+
+; S960 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7709&MI_01
+; S960 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_770D&MI_01
+; S960 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_770F&MI_02
+; S960 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_770B&MI_02
+
+; K910 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7710&MI_00
+; K910 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7715&MI_01
+; K910 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7717&MI_02
+; K910 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7713&MI_02
+
+; BLADE8 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F1&MI_01
+; BLADE8 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F3&MI_01
+; BLADE8 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F5&MI_02
+; BLADE8 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F7&MI_01
+; BLADE8 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F9&MI_02
+; BLADE8 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76FB&MI_01
+; BLADE10 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76FD&MI_01
+; BLADE10 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76FF&MI_01
+; BLADE10 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7701&MI_02
+; BLADE10 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7703&MI_01
+; BLADE10 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7705&MI_02
+; BLADE10 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7707&MI_01
+; A7800 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7775&MI_00
+; A7800 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_777B&MI_01
+; A7800 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_777D&MI_02
+; A7800 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7779&MI_02
+; B8080 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7769&MI_00
+; B8080 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_776F&MI_01
+; B8080 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7771&MI_02
+; B8080 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_776D&MI_02
+; K910 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7780&MI_00
+; K910 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7785&MI_01
+; K910 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7787&MI_02
+; K910 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7783&MI_02
+; K920 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_778C&MI_00
+; K920 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7791&MI_01
+; K920 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7793&MI_02
+; K920 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_778F&MI_02
+; YOGA Tablet 2-830F mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7797&MI_01
+; YOGA Tablet 2-830F bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_779F&MI_01
+; YOGA Tablet 2-1050F mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A3&MI_01
+; YOGA Tablet 2-1050F bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77AB&MI_01
+; YOGA Tablet 2-830L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77AF&MI_01
+; YOGA Tablet 2-830L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B7&MI_01
+; YOGA Tablet 2-1050L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77BB&MI_01
+; YOGA Tablet 2-1050L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77C3&MI_01
+; YOGA Tablet 2-830L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77AD&MI_01
+; YOGA Tablet 2-830L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B3&MI_01
+; YOGA Tablet 2-830L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B5&MI_02
+; YOGA Tablet 2-830L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B1&MI_02
+; YOGA Tablet 2-830F mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7795&MI_01
+; YOGA Tablet 2-830F ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_779B&MI_01
+; YOGA Tablet 2-830F rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_779D&MI_02
+; YOGA Tablet 2-830F mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7799&MI_02
+; YOGA Tablet 2-1050L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B9&MI_01
+; YOGA Tablet 2-1050L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77BF&MI_01
+; YOGA Tablet 2-1050L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77C1&MI_02
+; YOGA Tablet 2-1050L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77BD&MI_02
+; YOGA Tablet 2-1050F mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A1&MI_01
+; YOGA Tablet 2-1050F ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A7&MI_01
+; YOGA Tablet 2-1050F rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A9&MI_02
+; YOGA Tablet 2-1050F mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A5&MI_02
+; Lenovo X2 series mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E1&MI_01
+; Lenovo X2 series ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E5&MI_01
+; Lenovo X2 series rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E7&MI_02
+; Lenovo X2 series mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E3&MI_02
+; Airplay adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F0&MI_00
+; Airplay ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F5&MI_01
+; Airplay rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F7&MI_02
+; Airplay mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F3&MI_02
+; S7 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F8&MI_00
+; S7 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77FD&MI_01
+; S7 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77FF&MI_02
+; S7 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77FB&MI_02
+; A690e adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7808&MI_00
+; A690e ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_780D&MI_01
+; A690e rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_780F&MI_02
+; A690e mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_780B&MI_02
+; A319 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7829&MI_01
+; A319 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_782D&MI_01
+; A319 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_782F&MI_02
+; A319 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_782B&MI_02
+; A320t mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7819&MI_01
+; A320t ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_781D&MI_01
+; A320t rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_781F&MI_02
+; A320t mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_781B&MI_02
+; A588t mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7821&MI_01
+; A588t ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7825&MI_01
+; A588t rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7827&MI_02
+; A588t mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7823&MI_02
+; S580 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7810&MI_00
+; S580 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7815&MI_01
+; S580 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7817&MI_02
+; S580 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7813&MI_02
+; Z2 adb,diag,modem,nmea,mass_storage,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77E8&MI_00
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77E8&MI_05
+; Z2 diag,modem,nmea,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77E9&MI_04
+; Z2 mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EA&MI_02
+; Z2 mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77EB&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EB&MI_03
+; Z2 ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EC&MI_01
+; Z2 ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77ED&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77ED&MI_02
+; Z2 rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EE&MI_02
+; Z2 rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77EF&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EF&MI_03
+; Sisley adb,diag,modem,nmea,mass_storage,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7800&MI_00
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7800&MI_05
+; Sisley diag,modem,nmea,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7801&MI_04
+; Sisley mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7802&MI_02
+; Sisley mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7803&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7803&MI_03
+; Sisley ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7804&MI_01
+; Sisley ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7805&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7805&MI_02
+; Sisley rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7806&MI_02
+; Sisley rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7807&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7807&MI_03
+; K80M mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7869&MI_01
+; K80M ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_786D&MI_01
+; K80M rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_786F&MI_02
+; K80M mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_786B&MI_02
+; P81 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7871&MI_01
+; P81 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7875&MI_01
+; P81 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7877&MI_02
+; P81 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7873&MI_02
+; A6000 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7878&MI_00
+; A6000 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_787D&MI_01
+; A6000 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_787F&MI_02
+; A6000 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_787B&MI_02
+; aio mass_storage,ldb
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7880&MI_01
+; aio mass_storage,adb,ldb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7881&MI_01
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7881&MI_02
+; aio mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7882&MI_02
+; aio mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7883&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7883&MI_03
+; aio ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7884&MI_01
+; aio ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7885&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7885&MI_02
+; aio rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7886&MI_02
+; aio rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7887&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7887&MI_03
+; aubest mass_storage,ldb
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7888&MI_01
+; aubest mass_storage,adb,ldb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7889&MI_01
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7889&MI_02
+; aubest mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788A&MI_02
+; aubest mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_788B&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788B&MI_03
+; aubest ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788C&MI_01
+; aubest ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_788D&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788D&MI_02
+; aubest rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788E&MI_02
+; aubest rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_788F&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788F&MI_03
+; A5000 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7891&MI_01
+; A5000 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7895&MI_01
+; A5000 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7897&MI_02
+; A5000 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7893&MI_02
+; A10-70 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7899&MI_01
+; A10-70 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_789D&MI_02
+; A10-70 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_789F&MI_01
+; A10-70 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78A1&MI_02
+; Zoom adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78A4&MI_00
+; Zoom mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78A7&MI_02
+; Zoom ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78A9&MI_01
+; Zoom rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78AB&MI_02
+; TAB 2 A7-10 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_785D&MI_01
+; TAB 2 A7-10 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7863&MI_01
+; TAB 2 A7-10 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7865&MI_02
+; TAB 2 A7-10 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7861&MI_02
+; TAB 2 A7-10 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_785F&MI_01
+; TAB 2 A7-30 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7851&MI_01
+; TAB 2 A7-30 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7857&MI_01
+; TAB 2 A7-30 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7859&MI_02
+; TAB 2 A7-30 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7855&MI_02
+; TAB 2 A7-30 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7853&MI_01
+; Lenovo TAB 2 A8 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78D9&MI_01
+; Lenovo TAB 2 A8 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78DF&MI_01
+; Lenovo TAB 2 A8 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78E1&MI_02
+; Lenovo TAB 2 A8 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78DD&MI_02
+; Lenovo TAB 2 A8 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78DB&MI_01
+; Lenovo TAB 2 A8 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78E3&MI_01
+; S1 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F1&MI_02
+; S1  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F3&MI_01
+; S1  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F5&MI_02
+; K5 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F7&MI_02
+; K5  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F9&MI_01
+; K5  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78FB&MI_02
+; P1 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78FD&MI_02
+; P1  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78FF&MI_01
+; P1  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7901&MI_02
+; X3 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7903&MI_02
+; X3  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7905&MI_01
+; X3  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7907&MI_02
+; Max mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7909&MI_02
+; Max  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_790B&MI_01
+; Max  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_790D&MI_02
+
+; PB1-770 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78CD&MI_00
+; PB1-770 mass_storage£¬adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78CF&MI_01
+; PB1-770 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D1&MI_02
+; PB1-770 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D3&MI_01
+; PB1-770 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D5&MI_02
+; PB1-770 bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D7&MI_01
+
+; YT3-850 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78E5&MI_00
+; YT3-850 mass_storage£¬adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78E7&MI_01
+; YT3-850 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78E9&MI_02
+; YT3-850 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78EB&MI_01
+; YT3-850 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78ED&MI_02
+; YT3-850 bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78EF&MI_01
+
+;A1000 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7927&MI_01
+;A1000 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7929&MI_02
+;A1000 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_792B&MI_01
+;A1000 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_792D&MI_02
+
+;K31 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7916&MI_00
+;K31 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_791B&MI_01
+;K31 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_791D&MI_02
+;K31 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7919&MI_02
+
+;A6010 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7952&MI_00
+;A6010 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7957&MI_01
+;A6010 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7959&MI_02
+;A6010 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7955&MI_02
+
+;Pard mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_791F&MI_01
+;Pard mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7921&MI_02
+;Pard ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7923&MI_01
+;Pard rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7925&MI_02
+
+; Lenovo YT3-X50 for mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_792F&MI_01
+; Lenovo YT3-X50 for mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7931&MI_01
+; Lenovo YT3-X50 for mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7933&MI_02
+; Lenovo YT3-X50 for ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7935&MI_01
+; Lenovo YT3-X50 for rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7937&MI_02
+; Lenovo YT3-X50 for bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7939&MI_01
+
+; Lenovo YT3-X90F/L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_795D&MI_01
+; Lenovo YT3-X90F/L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7965&MI_01
+; Lenovo YT3-X90F/L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_795B&MI_01
+; Lenovo YT3-X90F/L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7961&MI_01
+; Lenovo YT3-X90F/L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7963&MI_02
+; Lenovo YT3-X90F/L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_795F&MI_02
+
+;Lenovo TB2-X30F/L/M masstroage
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_7947&MI_01
+;Lenovo TB2-X30F/L/M mtp 
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_7949&MI_01
+;Lenovo TB2-X30F/L/M mtp
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_794D&MI_01
+;Lenovo TB2-X30F/L/M mtp&masstorage
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_794B&MI_02
+;Lenovo TB2-X30F/L/M RNDIS
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_794F&MI_02
+
+;Lenovo PB1-750 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_793B&MI_01
+;Lenovo PB1-750 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_793D&MI_01
+;Lenovo PB1-750 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7941&MI_01
+;Lenovo PB1-750 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7943&MI_02
+;Lenovo PB1-750 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_793F&MI_02
+; K5 II mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_799A&MI_02
+; K5 II ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_799C&MI_01
+; K5 II rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_799E&MI_02
+
+; Lenovo YB1-X90F/L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79AC&MI_01
+; Lenovo YB1-X90F/L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79AE&MI_01
+; Lenovo YB1-X90F/L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B0&MI_02
+; Lenovo YB1-X90F/L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B2&MI_01
+; Lenovo YB1-X90F/L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B4&MI_02
+; Lenovo YB1-X90F/L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B6&MI_01
+
+; Lenovo KIA mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7994&MI_02
+; Lenovo KIA ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7996&MI_01
+; Lenovo KIA rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7998&MI_02
+; Lenovo A2020a40 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79B8&MI_02
+; Lenovo A2020a40 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79BA&MI_01
+; Lenovo A2020a40 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79BC&MI_02
+
+; Lenovo Shine mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79BE&MI_02
+; Lenovo Shine ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79C0&MI_01
+; Lenovo Shine rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79C2&MI_02
+
+; Lenovo YT3-X70L for mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D0&MI_01
+; Lenovo YT3-X70L for mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D2&MI_01
+; Lenovo YT3-X70L for mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D4&MI_02
+; Lenovo YT3-X70L for ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D6&MI_01
+; Lenovo YT3-X70L for rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D8&MI_02
+; Lenovo YT3-X70L for bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79DA&MI_01
+
+; Lenovo TB3-730 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79C4&MI_01
+; Lenovo TB3-730 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79C6&MI_02
+; Lenovo TB3-730 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79C8&MI_02
+; Lenovo TB3-730 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79CA&MI_01
+; Lenovo TB3-730 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79CC&MI_02
+; Lenovo YT3-X70L for bicr,adb
+%CompositeAdbInterface% 	= USB_Install, USB\VID_17EF&PID_79CE&MI_01
+
+; Lenovo TB3-X70 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79DC&MI_01
+; Lenovo TB3-X70 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79DE&MI_01
+; Lenovo TB3-X70 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79E0&MI_02
+; Lenovo TB3-X70 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79E2&MI_01
+; Lenovo TB3-X70 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79E4&MI_02
+; Lenovo TB3-X70 for bicr,adb
+%CompositeAdbInterface% 	= USB_Install, USB\VID_17EF&PID_79E6&MI_01
+
+; Lenovo TAB 3 8 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79EF&MI_01
+; Lenovo TAB 3 8 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F5&MI_01
+; Lenovo TAB 3 8 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F7&MI_02
+; Lenovo TAB 3 8 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F3&MI_02
+; Lenovo TAB 3 8 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F1&MI_01
+; Lenovo TAB 3 8 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F9&MI_01
+
+; Lenovo PHAB 2 Pro mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A12&MI_01
+; Lenovo PHAB 2 Pro mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A13&MI_02
+; Lenovo PHAB 2 Pro ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A14&MI_01
+; Lenovo PHAB 2 Pro ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A15&MI_01
+; Lenovo PHAB 2 Pro midi
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749E&MI_01
+; Lenovo PHAB 2 Pro midi,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749D&MI_01
+; Lenovo PHAB 2 Pro rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A16&MI_01
+; Lenovo PHAB 2 Pro rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A17&MI_02
+
+; Lenovo PHAB 2 Plus mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79FB&MI_01
+; Lenovo PHAB 2 Plus ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A01&MI_01
+; Lenovo PHAB 2 Plus rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A03&MI_02
+; Lenovo PHAB 2 Plus mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79FF&MI_02
+; Lenovo PHAB 2 Plus mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79FD&MI_01
+; Lenovo PHAB 2 Plus bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A05&MI_01
+
+; Lenovo Phab2 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A07&MI_01
+; Lenovo Phab2 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A09&MI_02
+; Lenovo Phab2 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A0B&MI_02
+; Lenovo Phab2 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A0D&MI_01
+; Lenovo Phab2 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A0F&MI_02
+; Lenovo Phab2 for bicr,adb
+%CompositeAdbInterface% 	= USB_Install, USB\VID_17EF&PID_7A11&MI_01
+
+; Lenovo B mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A18&MI_01
+; Lenovo B mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A19&MI_02
+; Lenovo B ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1A&MI_01
+; Lenovo B ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1B&MI_01
+; Lenovo B rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1C&MI_01
+; Lenovo B rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1D&MI_02
+
+; Lenovo Taichi-B mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A30&MI_01
+; Lenovo Taichi-B mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A31&MI_02
+; Lenovo Taichi-B ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A32&MI_01
+; Lenovo Taichi-B ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A33&MI_01
+; Lenovo Taichi-B rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A34&MI_01
+; Lenovo Taichi-B rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A35&MI_02
+
+; Lenovo Karate Series mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2A&MI_01
+; Lenovo Karate Series mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2B&MI_02
+; Lenovo Karate Series ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2C&MI_01
+; Lenovo Karate Series ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2D&MI_01
+; Lenovo Karate Series rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2E&MI_01
+; Lenovo Karate Series rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2F&MI_02
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project end NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Google.NTamd64]
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;vendor ADB Interface
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0005
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0005&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0C01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0C02&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0BB4&PID_0C03&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_2003&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_2006&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_200A&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_2035&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_0E8D&PID_201D&MI_01
+;Lenovo ADB Interface
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7437&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7498&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749B&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749D&MI_02
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74A4&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7437
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7437&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7498
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7498&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7499&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749B
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749B&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_2006&PID_0C03&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_9025&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_2006&PID_0005
+%CompositeAdbInterface%     = USB_Install, USB\VID_2006&PID_0005&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_18D1&PID_D00D
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7495&MI_00
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74EC&MI_00
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74F6&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7509&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_750A&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_750D&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_0001&MI_01
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_9091&MI_03 
+%CompositeAdbInterface%     = USB_Install, USB\VID_05c6&PID_9039&MI_01 
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history end NTamd64;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+; Shellw rndis,diag,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_05C6&PID_902D&MI_03
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory end NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;generic mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7435&MI_01
+;generic mass_storage,adb,acm
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74ED&MI_01
+;generic adb,diag,modem,nmea
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7501&MI_00
+;generic adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7513&MI_00
+;generic mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74F8&MI_01
+;generic ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74F9&MI_01
+;generic rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7500&MI_02
+;generic bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_750E&MI_01
+;generic mtp,adb,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_74EE&MI_01
+;generic mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7718&MI_02
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic end NTamd64;;;;;;;;;;;;;;;;;;;;;;;;; 
+      
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; S6000L mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E0&MI_01
+; S6000L ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E6&MI_01
+; S6000L rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75EA&MI_02
+; S6000L mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E4&MI_02
+; S6000L bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7629&MI_01
+; S6000L mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_75E2&MI_01
+; S5000 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76E5&MI_01
+; S5000 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76EB&MI_01
+; S5000 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76ED&MI_02
+; S5000 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76E9&MI_02
+; S5000 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76EF&MI_01
+; S5000 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76E7&MI_01
+; S960 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7709&MI_01
+; S960 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_770D&MI_01
+; S960 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_770F&MI_02
+; S960 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_770B&MI_02
+; K910 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7710&MI_00
+; K910 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7715&MI_01
+; K910 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7717&MI_02
+; K910 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7713&MI_02
+; BLADE8 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F1&MI_01
+; BLADE8 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F3&MI_01
+; BLADE8 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F5&MI_02
+; BLADE8 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F7&MI_01
+; BLADE8 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76F9&MI_02
+; BLADE8 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76FB&MI_01
+; BLADE10 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76FD&MI_01
+; BLADE10 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_76FF&MI_01
+; BLADE10 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7701&MI_02
+; BLADE10 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7703&MI_01
+; BLADE10 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7705&MI_02
+; BLADE10 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7707&MI_01
+; A7800 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7775&MI_00
+; A7800 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_777B&MI_01
+; A7800 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_777D&MI_02
+; A7800 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7779&MI_02
+; B8080 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7769&MI_00
+; B8080 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_776F&MI_01
+; B8080 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7771&MI_02
+; B8080 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_776D&MI_02
+; K910 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7780&MI_00
+; K910 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7785&MI_01
+; K910 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7787&MI_02
+; K910 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7783&MI_02
+; K920 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_778C&MI_00
+; K920 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7791&MI_01
+; K920 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7793&MI_02
+; K920 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_778F&MI_02
+; YOGA Tablet 2-830F mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7797&MI_01
+; YOGA Tablet 2-830F bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_779F&MI_01
+; YOGA Tablet 2-1050F mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A3&MI_01
+; YOGA Tablet 2-1050F bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77AB&MI_01
+; YOGA Tablet 2-830L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77AF&MI_01
+; YOGA Tablet 2-830L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B7&MI_01
+; YOGA Tablet 2-1050L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77BB&MI_01
+; YOGA Tablet 2-1050L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77C3&MI_01
+; YOGA Tablet 2-830L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77AD&MI_01
+; YOGA Tablet 2-830L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B3&MI_01
+; YOGA Tablet 2-830L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B5&MI_02
+; YOGA Tablet 2-830L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B1&MI_02
+; YOGA Tablet 2-830F mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7795&MI_01
+; YOGA Tablet 2-830F ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_779B&MI_01
+; YOGA Tablet 2-830F rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_779D&MI_02
+; YOGA Tablet 2-830F mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7799&MI_02
+; YOGA Tablet 2-1050L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77B9&MI_01
+; YOGA Tablet 2-1050L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77BF&MI_01
+; YOGA Tablet 2-1050L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77C1&MI_02
+; YOGA Tablet 2-1050L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77BD&MI_02
+; YOGA Tablet 2-1050F mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A1&MI_01
+; YOGA Tablet 2-1050F ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A7&MI_01
+; YOGA Tablet 2-1050F rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A9&MI_02
+; YOGA Tablet 2-1050F mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77A5&MI_02
+; Lenovo X2 series mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E1&MI_01
+; Lenovo X2 series ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E5&MI_01
+; Lenovo X2 series rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E7&MI_02
+; Lenovo X2 series mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_77E3&MI_02
+; Airplay adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F0&MI_00
+; Airplay ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F5&MI_01
+; Airplay rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F7&MI_02
+; Airplay mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F3&MI_02
+; S7 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77F8&MI_00
+; S7 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77FD&MI_01
+; S7 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77FF&MI_02
+; S7 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77FB&MI_02
+; A690e adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7808&MI_00
+; A690e ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_780D&MI_01
+; A690e rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_780F&MI_02
+; A690e mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_780B&MI_02
+; A319 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7829&MI_01
+; A319 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_782D&MI_01
+; A319 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_782F&MI_02
+; A319 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_782B&MI_02
+; A320t mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7819&MI_01
+; A320t ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_781D&MI_01
+; A320t rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_781F&MI_02
+; A320t mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_781B&MI_02
+; A588t mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7821&MI_01
+; A588t ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7825&MI_01
+; A588t rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7827&MI_02
+; A588t mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7823&MI_02
+; S580 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7810&MI_00
+; S580 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7815&MI_01
+; S580 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7817&MI_02
+; S580 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7813&MI_02
+; Z2 adb,diag,modem,nmea,mass_storage,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77E8&MI_00
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77E8&MI_05
+; Z2 diag,modem,nmea,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77E9&MI_04
+; Z2 mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EA&MI_02
+; Z2 mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77EB&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EB&MI_03
+; Z2 ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EC&MI_01
+; Z2 ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77ED&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77ED&MI_02
+; Z2 rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EE&MI_02
+; Z2 rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_77EF&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_77EF&MI_03
+; Sisley adb,diag,modem,nmea,mass_storage,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7800&MI_00
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7800&MI_05
+; Sisley diag,modem,nmea,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7801&MI_04
+; Sisley mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7802&MI_02
+; Sisley mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7803&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7803&MI_03
+; Sisley ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7804&MI_01
+; Sisley ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7805&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7805&MI_02
+; Sisley rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7806&MI_02
+; Sisley rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7807&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7807&MI_03
+; K80M mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7869&MI_01
+; K80M ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_786D&MI_01
+; K80M rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_786F&MI_02
+; K80M mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_786B&MI_02
+; P81 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7871&MI_01
+; P81 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7875&MI_01
+; P81 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7877&MI_02
+; P81 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7873&MI_02
+; A6000 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7878&MI_00
+; A6000 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_787D&MI_01
+; A6000 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_787F&MI_02
+; A6000 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_787B&MI_02
+; aio mass_storage,ldb
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7880&MI_01
+; aio mass_storage,adb,ldb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7881&MI_01
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7881&MI_02
+; aio mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7882&MI_02
+; aio mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7883&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7883&MI_03
+; aio ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7884&MI_01
+; aio ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7885&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7885&MI_02
+; aio rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7886&MI_02
+; aio rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7887&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_7887&MI_03
+; aubest mass_storage,ldb
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7888&MI_01
+; aubest mass_storage,adb,ldb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7889&MI_01
+%CompositeLdbInterface%     = USB_Install, USB\VID_17EF&PID_7889&MI_02
+; aubest mtp,mass_storage,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788A&MI_02
+; aubest mtp,mass_storage,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_788B&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788B&MI_03
+; aubest ptp,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788C&MI_01
+; aubest ptp,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_788D&MI_01
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788D&MI_02
+; aubest rndis,ldb
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788E&MI_02
+; aubest rndis,adb,ldb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_788F&MI_02
+%CompositeLdbInterface% = USB_Install, USB\VID_17EF&PID_788F&MI_03
+; A5000 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7891&MI_01
+; A5000 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7895&MI_01
+; A5000 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7897&MI_02
+; A5000 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7893&MI_02
+; A10-70 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7899&MI_01
+; A10-70 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_789D&MI_02
+; A10-70 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_789F&MI_01
+; A10-70 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78A1&MI_02
+; Zoom adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78A4&MI_00
+; Zoom mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78A7&MI_02
+; Zoom ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78A9&MI_01
+; Zoom rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78AB&MI_02
+; TAB 2 A7-10 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_785D&MI_01
+; TAB 2 A7-10 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7863&MI_01
+; TAB 2 A7-10 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7865&MI_02
+; TAB 2 A7-10 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7861&MI_02
+; TAB 2 A7-A10 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_785F&MI_01
+; TAB 2 A7-30 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7851&MI_01
+; TAB 2 A7-30 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7857&MI_01
+; TAB 2 A7-30 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7859&MI_02
+; TAB 2 A7-30 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7855&MI_02
+; TAB 2 A7-30 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7853&MI_01
+; Lenovo TAB 2 A8 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78D9&MI_01
+; Lenovo TAB 2 A8 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78DF&MI_01
+; Lenovo TAB 2 A8 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78E1&MI_02
+; Lenovo TAB 2 A8 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78DD&MI_02
+; Lenovo TAB 2 A8 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78DB&MI_01
+; Lenovo TAB 2 A8 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78E3&MI_01
+; S1 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F1&MI_02
+; S1  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F3&MI_01
+; S1  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F5&MI_02
+; K5 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F7&MI_02
+; K5  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78F9&MI_01
+; K5  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78FB&MI_02
+; P1 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78FD&MI_02
+; P1  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_78FF&MI_01
+; P1  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7901&MI_02
+; X3 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7903&MI_02
+; X3  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7905&MI_01
+; X3  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7907&MI_02
+; Max mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7909&MI_02
+; Max  ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_790B&MI_01
+; Max  rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_790D&MI_02
+
+; PB1-770 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78CD&MI_00
+; PB1-770 mass_storage£¬adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78CF&MI_01
+; PB1-770 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D1&MI_02
+; PB1-770 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D3&MI_01
+; PB1-770 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D5&MI_02
+; PB1-770 bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78D7&MI_01
+
+; YT3-850 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78E5&MI_00
+; YT3-850 mass_storage£¬adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78E7&MI_01
+; YT3-850 mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78E9&MI_02
+; YT3-850 ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78EB&MI_01
+; YT3-850 rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78ED&MI_02
+; YT3-850 bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_78EF&MI_01
+
+;A1000 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7927&MI_01
+;A1000 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7929&MI_02
+;A1000 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_792B&MI_01
+;A1000 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_792D&MI_02
+
+;K31 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7916&MI_00
+;K31 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_791B&MI_01
+;K31 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_791D&MI_02
+;K31 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7919&MI_02
+
+;A6010 adb,diag,modem,nmea,mass_storage
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7952&MI_00
+;A6010 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7957&MI_01
+;A6010 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7959&MI_02
+;A6010 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7955&MI_02
+
+;Pard mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_791F&MI_01
+;Pard mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7921&MI_02
+;Pard ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7923&MI_01
+;Pard rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7925&MI_02
+
+; Lenovo YT3-X50 for mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_792F&MI_01
+; Lenovo YT3-X50 for mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7931&MI_01
+; Lenovo YT3-X50 for mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7933&MI_02
+; Lenovo YT3-X50 for ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7935&MI_01
+; Lenovo YT3-X50 for rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7937&MI_02
+; Lenovo YT3-X50 for bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7939&MI_01
+
+; Lenovo YT3-X90F/L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_795D&MI_01
+; Lenovo YT3-X90F/L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7965&MI_01
+; Lenovo YT3-X90F/L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_795B&MI_01
+; Lenovo YT3-X90F/L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7961&MI_01
+; Lenovo YT3-X90F/L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_7963&MI_02
+; Lenovo YT3-X90F/L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_795F&MI_02
+
+;Lenovo TB2-X30F/L/M masstroage
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_7947&MI_01
+;Lenovo TB2-X30F/L/M mtp
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_7949&MI_01
+;Lenovo TB2-X30F/L/M mtp
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_794D&MI_01
+;Lenovo TB2-X30F/L/M mtp&masstorage
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_794B&MI_02
+;Lenovo TB2-X30F/L/M RNDIS
+%CompositeAdbInterface%  = USB_Install, USB\VID_17EF&PID_794F&MI_02
+
+;Lenovo PB1-750 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_793B&MI_01
+;Lenovo PB1-750 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_793D&MI_01
+;Lenovo PB1-750 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7941&MI_01
+;Lenovo PB1-750 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7943&MI_02
+;Lenovo PB1-750 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_793F&MI_02
+; K5 II mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_799A&MI_02
+; K5 II ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_799C&MI_01
+; K5 II rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_799E&MI_02
+
+; Lenovo YB1-X90F/L mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79AC&MI_01
+; Lenovo YB1-X90F/L mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79AE&MI_01
+; Lenovo YB1-X90F/L mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B0&MI_02
+; Lenovo YB1-X90F/L ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B2&MI_01
+; Lenovo YB1-X90F/L rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B4&MI_02
+; Lenovo YB1-X90F/L bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79B6&MI_01
+
+; Lenovo KIA mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7994&MI_02
+; Lenovo KIA ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7996&MI_01
+; Lenovo KIA rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7998&MI_02
+
+; Lenovo A2020a40 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79B8&MI_02
+; Lenovo A2020a40 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79BA&MI_01
+; Lenovo A2020a40 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79BC&MI_02
+
+; Lenovo Shine mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79BE&MI_02
+; Lenovo Shine ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79C0&MI_01
+; Lenovo Shine rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79C2&MI_02
+
+; Lenovo YT3-X70L for mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D0&MI_01
+; Lenovo YT3-X70L for mtp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D2&MI_01
+; Lenovo YT3-X70L for mtp,mass_storage,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D4&MI_02
+; Lenovo YT3-X70L for ptp,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D6&MI_01
+; Lenovo YT3-X70L for rndis,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79D8&MI_02
+; Lenovo YT3-X70L for bicr,adb
+%CompositeAdbInterface% = USB_Install, USB\VID_17EF&PID_79DA&MI_01
+
+; Lenovo TB3-730 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79C4&MI_01
+; Lenovo TB3-730 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79C6&MI_02
+; Lenovo TB3-730 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79C8&MI_02
+; Lenovo TB3-730 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79CA&MI_01
+; Lenovo TB3-730 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79CC&MI_02
+; Lenovo YT3-X70L for bicr,adb
+%CompositeAdbInterface% 	= USB_Install, USB\VID_17EF&PID_79CE&MI_01
+
+; Lenovo TB3-X70 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79DC&MI_01
+; Lenovo TB3-X70 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79DE&MI_01
+; Lenovo TB3-X70 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79E0&MI_02
+; Lenovo TB3-X70 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79E2&MI_01
+; Lenovo TB3-X70 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79E4&MI_02
+; Lenovo TB3-X70 for bicr,adb
+%CompositeAdbInterface% 	= USB_Install, USB\VID_17EF&PID_79E6&MI_01
+
+; Lenovo TAB 3 8 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79EF&MI_01
+; Lenovo TAB 3 8 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F5&MI_01
+; Lenovo TAB 3 8 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F7&MI_02
+; Lenovo TAB 3 8 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F3&MI_02
+; Lenovo TAB 3 8 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F1&MI_01
+; Lenovo TAB 3 8 bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79F9&MI_01
+
+; Lenovo PHAB 2 Pro mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A12&MI_01
+; Lenovo PHAB 2 Pro mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A13&MI_02
+; Lenovo PHAB 2 Pro ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A14&MI_01
+; Lenovo PHAB 2 Pro ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A15&MI_01
+; Lenovo PHAB 2 Pro midi
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749E&MI_01
+; Lenovo PHAB 2 Pro midi,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_749D&MI_01
+; Lenovo PHAB 2 Pro rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A16&MI_01
+; Lenovo PHAB 2 Pro rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A17&MI_02
+
+; Lenovo PHAB 2 Plus mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79FB&MI_01
+; Lenovo PHAB 2 Plus ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A01&MI_01
+; Lenovo PHAB 2 Plus rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A03&MI_02
+; Lenovo PHAB 2 Plus mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79FF&MI_02
+; Lenovo PHAB 2 Plus mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_79FD&MI_01
+; Lenovo PHAB 2 Plus bicr,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A05&MI_01
+
+; Lenovo Phab2 mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A07&MI_01
+; Lenovo Phab2 mtp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A09&MI_02
+; Lenovo Phab2 mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A0B&MI_02
+; Lenovo Phab2 ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A0D&MI_01
+; Lenovo Phab2 rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A0F&MI_02
+; Lenovo Phab2 for bicr,adb
+%CompositeAdbInterface% 	= USB_Install, USB\VID_17EF&PID_7A11&MI_01
+
+; Lenovo B mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A18&MI_01
+; Lenovo B mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A19&MI_02
+; Lenovo B ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1A&MI_01
+; Lenovo B ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1B&MI_01
+; Lenovo B rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1C&MI_01
+; Lenovo B rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A1D&MI_02
+
+; Lenovo Taichi-B mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A30&MI_01
+; Lenovo Taichi-B mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A31&MI_02
+; Lenovo Taichi-B ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A32&MI_01
+; Lenovo Taichi-B ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A33&MI_01
+; Lenovo Taichi-B rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A34&MI_01
+; Lenovo Taichi-B rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A35&MI_02
+
+; Lenovo Karate Series mtp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2A&MI_01
+; Lenovo Karate Series mtp,mass_storage,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2B&MI_02
+; Lenovo Karate Series ptp
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2C&MI_01
+; Lenovo Karate Series ptp,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2D&MI_01
+; Lenovo Karate Series rndis
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2E&MI_01
+; Lenovo Karate Series rndis,adb
+%CompositeAdbInterface%     = USB_Install, USB\VID_17EF&PID_7A2F&MI_02
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project end NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[USB_Install.Services]
+Include     = winusb.inf
+AddService  = WinUSB,0x00000002,WinUSB_ServiceInstall
+
+[WinUSB_ServiceInstall]
+DisplayName     = %WinUSB_SvcDesc%
+ServiceType     = 1
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %12%\WinUSB.sys
+
+[USB_Install.Wdf]
+KmdfService = WINUSB, WinUSB_Install
+
+[WinUSB_Install]
+KmdfLibraryVersion  = 1.9
+
+[USB_Install.HW]
+AddReg  = Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{F72FE0D4-CBCB-407d-8814-9ED673D0DD6B}"
+
+[USB_Install.CoInstallers]
+AddReg    = CoInstallers_AddReg
+CopyFiles = CoInstallers_CopyFiles
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll,WdfCoInstaller","WinUSBCoInstaller2.dll"
+
+[CoInstallers_CopyFiles]
+WinUSBCoInstaller2.dll
+WdfCoInstaller01009.dll
+
+[DestinationDirs]
+CoInstallers_CopyFiles=11
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,\i386
+2 = %DISK_NAME%,,,\amd64
+
+[SourceDisksFiles.x86]
+WinUSBCoInstaller2.dll  = 1
+WdfCoInstaller01009.dll = 1
+
+[SourceDisksFiles.amd64]
+WinUSBCoInstaller2.dll  = 2
+WdfCoInstaller01009.dll = 2
+
+[Strings]
+ProviderName                = "Lenovo Inc."
+SingleAdbInterface          = "Lenovo ADB Interface"
+CompositeAdbInterface       = "Lenovo Composite ADB Interface"
+CompositeLdbInterface       = "Lenovo Composite LDB Interface"
+SingleBootLoaderInterface   = "Lenovo Bootloader Interface"
+WinUSB_SvcDesc              = "Lenovo USB Driver"
+DISK_NAME                   = "Lenovo WinUsb installation disk"
+ClassName                   = "Lenovo ADB Device"

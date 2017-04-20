@@ -1,0 +1,7 @@
+#Mon Mar 13 10:28:24 PDT 2017
+base.0=C\:\\Users\\NAHUSH RAICHURA\\AndroidStudioProjects\\Trinity-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_30f61f109ded098067ced3f2bf7db7071bc16a9c
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\NAHUSH RAICHURA\\AndroidStudioProjects\\Trinity-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_b53bae9ab0feb7e2a5cd2bcffd74efcc5cbaccad\\classes.dex
+base.1=C\:\\Users\\NAHUSH RAICHURA\\AndroidStudioProjects\\Trinity-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_b53bae9ab0feb7e2a5cd2bcffd74efcc5cbaccad
+file.0=C\:\\Users\\NAHUSH RAICHURA\\AndroidStudioProjects\\Trinity-master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_30f61f109ded098067ced3f2bf7db7071bc16a9c\\classes.dex

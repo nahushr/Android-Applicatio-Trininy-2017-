@@ -1,0 +1,76 @@
+{
+            eventList[i]=SetupActivity.lltitle.get(i).toString();
+            Log.d("attract frag eventlist ",eventList[i]);
+        }
+        for(int i=0;i<eventListDay.length;i++)
+        {
+            eventListDay[i]=SetupActivity.lleventday.get(i).toString();
+            Log.d("attract eventlistday ",eventListDay[i]);
+        }
+
+        for(int i=0;i<eventListMonth.length;i++)
+        {
+            eventListMonth[i]=SetupActivity.lleventmonth.get(i).toString();
+            Log.d("attract eventlistmonth ",eventListMonth[i]);
+        }
+
+        for(int i=0;i<event_coordarray.length;i++)
+        {
+            event_coordarray[i]=SetupActivity.llcoord.get(i).toString();
+            Log.d("attract eventlist coord",event_coordarray[i]);
+        }
+
+        for(int i=0;i<event_coord_noarray.length;i++)
+        {
+            event_coord_noarray[i]=SetupActivity.llcoord_no.get(i).toString();
+            Log.d("attract eventlist codno",event_coord_noarray[i]);
+        }
+
+        for(int i=0;i<descrip.length;i++)
+        {
+            descrip[i]=SetupActivity.lldescrip.get(i).toString();
+            Log.d("attract eventlist desc ",descrip[i]);
+        }
+
+        for(int i=0;i<eventvenue.length;i++)
+        {
+            eventvenue[i]=SetupActivity.llvenue.get(i).toString();
+            Log.d("attract eventlist venue",eventvenue[i]);
+        }
+        for(int i=0;i<category.length;i++)
+        {
+            if(SetupActivity.llcategory.get(i).toString().equalsIgnoreCase("t"))
+            {
+                SetupActivity.technicalcounter++;
+            }
+            if(SetupActivity.llcategory.get(i).toString().equalsIgnoreCase("c"))
+            {
+                SetupActivity.culturalcounter++;
+            }
+            if(SetupActivity.llcategory.get(i).toString().equalsIgnoreCase("s"))
+            {
+                SetupActivity.sportscounter++;
+            }
+            category[i]=SetupActivity.llcategory.get(i).toString();
+            Log.d("attract eventlist cat ",category[i]);
+
+        }
+        for(int i=0;i<eventprice.length;i++)
+        {
+            eventprice[i]=SetupActivity.llprice.get(i).toString();
+            Log.d("attract eventlist mrp ",eventprice[i]);
+        }
+        for(int i=0;i<event_poster.length;i++)
+        {
+            event_poster[i]=SetupActivity.llposter_url.get(i).toString();
+            Log.d("attract eventlist url ",event_poster[i]);
+        }
+        for(int i=0;i<event_one_liner.length;i++)
+        {
+            event_one_liner[i]=SetupActivity.llone_liners.get(i).toString();
+            Log.d("attract eventlist 1_L ",event_one_liner[i]);
+        }
+        for(int i=0;i<googleform_url.length;i++)
+        {
+            googleform_url[i]=SetupActivity.llgoogle_form.get(i).toString();
+        }

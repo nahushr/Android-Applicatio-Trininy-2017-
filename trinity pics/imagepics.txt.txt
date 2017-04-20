@@ -1,0 +1,12 @@
+get a globe and cross material icon
+set bg color to black on preview image click
+webview clicking of bottomsheet
+register here coming null
+set tel on coordnator numbr 
+set nomotif of alarm dynamically
+technical event not coming
+fix idpt
+set dividers in schedule recyclerview
+remove team and set a webview,check the team toolbar
+bottom sheet on contact click in about , get the bullets up
+fix sponsors recyclerview

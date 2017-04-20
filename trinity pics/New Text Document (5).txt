@@ -1,0 +1,2506 @@
+ /* switch (eventName) {
+            //Cultural
+            case "Outhouse Treasure Hunt":
+                // img.setBackgroundResource(R.drawable.treasure_hunt);
+                Picasso.with(this).load("http://i.imgsafe.org/437e3db467.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "DJ's biggest Treasure hunt!\n" +
+                        "Discover the twists and turns of this Bombay Monopoly, " +
+                        "with mind boggling clues and questions, that will challenge even the brightest minds.";
+
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Outhouse Treasure Hunt"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                noNotif = true;
+                break;
+
+            case "Fresher's Party":
+                Picasso.with(this).load("http://i.imgsafe.org/437bbeea59.jpg\",\n").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });                header = "Cultural";
+                description = "An event to mark the end of crossroads and cherish new beginnings.\n" +
+                        "The Fresher's Party is a revelry marking a rebellious future!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Fresher's Party"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                noNotif = true;
+                break;
+
+            case "Concert Night":
+                Picasso.with(this).load("http://i.imgsafe.org/437b026e7a.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Our cultural flagship event, wherein we invite professional singers from Bollywood.\n" +
+                        "A night to look forward to in any calendar year!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Concert Night"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Inter-Department Dance":
+                Picasso.with(this).load("http://i.imgsafe.org/437afad5bd.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Yes we are well aware about your ability to groove to the tunes!\n" +
+                        "And hence, we present the Inter-departmental dance competition, a perfect blend of dance as well as competitiveness.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Inter-Department Dance"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Battleship":
+                Picasso.with(this).load("http://i.imgsafe.org/437a6c7cd0.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Aloha mates!\n" +
+                        "This is war and the battleships have disembarked to attack. The only way to prevent damage is by sinking your opponents ship.\n" +
+                        "The catch?\n" +
+                        "The ship could be present anywhere on the board and it's you're responsibility to figure out where, before it is too late.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Battleship"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "DJGT":
+                Picasso.with(this).load("http://i.imgsafe.org/437b56087b.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Our own talent hunt show, which is thrown open to the fellow Mumbaikars!\n" +
+                        "A great opportunity to showcase your talent!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("DJGT"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "VCJA":
+                Picasso.with(this).load("http://blog.caranddriver.com/wp-content/uploads/2015/11/BMW-2-series.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Coming Soon";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("VCJA"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                noNotif = true;
+                break;
+
+            case "Haunted House":
+                Picasso.with(this).load("http://i.imgsafe.org/437ba23368.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Get ready to have your wits shaken.\n" +
+                        "Feel your blood curdle and your spine tingle in the scariest corner of Trinity.\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Haunted House"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Street Play":
+                Picasso.with(this).load("http://i.imgsafe.org/437e1b3266.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Play out a revolution!\n" +
+                        "Shed light on the hurdles plaguing the society.\n" +
+                        "Let your dramaturgy shine and compel bystanders to stop and clap their hearts out!\n" +
+                        "Prizes worth 6k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Street Play"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "DJ MUN":
+                Picasso.with(this).load("http://i.imgsafe.org/437b4ddc8e.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Represent a nation in this formal war of words and speak about the latest trivial global issues.\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("DJ MUN"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Murder Mystery":
+                Picasso.with(this).load("http://i.imgsafe.org/437cb8ac21.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "In the hangover of the latest Sherlock episode, race through " +
+                        "a pyramid of clues and work your way to bottom of each and every mystery. " +
+                        "Put your brains to use by deciphering the signs and understanding the " +
+                        "writing between the lines.\n" +
+                        "Each team must have 4 members.\n" +
+                        "Prizes worth 20k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Murder Mystery"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Chain Reaction":
+                Picasso.with(this).load("http://i.imgsafe.org/437a9c6e7d.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Watch all the events unfold in an exquisite game of dominos, " +
+                        "falling in tandem.\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Chain Reaction"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Stand-Up Comedy":
+                Picasso.with(this).load("http://i.imgsafe.org/437e01f134.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Humour finds it's way, howsoever you try suppressing it!\n" +
+                        "And why suppress? We've got our own Stand-Up Comedy competition!\n" +
+                        "Prizes worth 3k to be won.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Stand-Up Comedy"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Musician's War":
+                Picasso.with(this).load("http://i.imgsafe.org/437cd03035.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Guitar, drums, flute? Get it all and take part in a melodious stand off in this musical battle.\n" +
+                        "Prizes worth 6k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Musician's War"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Escape The Room":
+                Picasso.with(this).load("http://i.imgsafe.org/437ba23368.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Get your team of sleuths to find a way out from the dreaded chamber unscrambling clues along the way.\n" +
+                        "Each team must have 4 members.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Escape The Room"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Debate":
+                Picasso.with(this).load("http://i.imgsafe.org/437aa755f4.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Can you prove your point with smart words and tacky one liners?\n" +
+                        "Here's your chance to win the audience over.\n" +
+                        "Each team must have 2 members.\n" +
+                        "Prizes worth 10k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Debate"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Quiz":
+                Picasso.with(this).load("http://i.imgsafe.org/437ddd85bd.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Test your skills and knowledge as the next Derek O'Brein in this brain racking challenge.\n" +
+                        "Each team must have 2 members.\n" +
+                        "Prizes worth 10k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Quiz"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Mr & Ms Trinity":
+
+                Picasso.with(this).load("http://i.imgsafe.org/437c97b5f9.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "The Search is on! For the belle's and the beau's of the hour.\n" +
+                        "The cream of the crowd.\n" +
+                        "Watch the contestants display flair and genius in this battle featuring beauty and brains!\n" +
+                        "Prizes worth 5k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Mr & Ms Trinity"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Short Film Fest":
+                Picasso.with(this).load("http://i.imgsafe.org/437c97b5f9.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Roll, camera, action!\n" +
+                        "Present your ideas on tape at the Cannes of Trinity.\n" +
+                        "Prizes worth 3k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Short Film Fest"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Photography":
+                Picasso.with(this).load("http://i.imgsafe.org/437dca5345.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Aim, click, shoot.\n" +
+                        "Now's the time to let your camera and your snaps to do the talking.\n" +
+                        "Prizes worth 5k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Photography"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "MasterChef":
+                Picasso.with(this).load("http://i.imgsafe.org/437c4ab359.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Entree, main course, dessert. Can you do it all?\n" +
+                        "Face off in the Trinity kitchen to earn your own chef's hat.\n" +
+                        "Each team must have 2 members." +
+                        "Prizes worth 5k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("MasterChef"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Just A Minute (JAM)":
+                Picasso.with(this).load("http://i.imgsafe.org/437bf46fb6.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Get your words together to battle it out with words.\n" +
+                        "You have a minute to dirty the battlefield.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Just A Minute (JAM)"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Graffiti":
+                Picasso.with(this).load("http://i.imgsafe.org/437bad923c.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Have you wanted to fill a wall with your artistic degisns without having it considered as vandalism?\n" +
+                        "Do spray cans and plain walls get your fingers itching?\n" +
+                        "Graffiti is where you'd want to be! It's not something you get to do everyday!\n" +
+                        "Prizes worth 3k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Graffiti"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Beg Borrow Steal":
+                Picasso.with(this).load("http://i.imgsafe.org/437a4944de.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Are you resourceful enough to get what you want?\n" +
+                        "By any means necessary?\n" +
+                        "Would you beg from a stranger, borrow from a friend or be gutsy enough to steal?\n" +
+                        "Because here, the end justifies the means.\n" +
+                        "Teams of atleast 3.\n" +
+                        "Prizes worth 3k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Beg Borrow Steal"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Karaoke":
+                Picasso.with(this).load("http://i.imgsafe.org/437c12ec89.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Whether you're a pitch-perfect singer or just a fun loving karaoke enthusiast, " +
+                        "this is the perfect opportunity to let your inner star shine !\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Karaoke"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Fine Arts":
+                Picasso.with(this).load("http://i.imgsafe.org/437b7b4f2e.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "A R T S ! \n" +
+                        "These mere four letters come together to give a perfect blend of creativity and imagination!\n" +
+                        "Prizes worth 6k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Fine Arts"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Mad Ad":
+                Picasso.with(this).load("http://i.imgsafe.org/437c57fe95.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "With a unique concept, this event provides a platform to showcase your ability to perform yet be creative!\n" +
+                        "Think you've got Mad Ad skills?\n" +
+                        "Then participate in this event as you can create insane ads for a given product and perform in front of a live audience." +
+                        "Prizes worth 3k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Mad Ad"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Silent Disco":
+                Picasso.with(this).load("http://i.imgsafe.org/437e16e450.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "This event is incredible for you to forget the world for a bit, by plugging in those earphones. \n" +
+                        "Loose yourself in the beat of the music and bring out your best moves in the Silent Disco";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Silent Disco"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Brain 'N Brawn":
+                Picasso.with(this).load("http://i.imgsafe.org/437a74b3e0.png").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "Coming Soon!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Brain 'N Brawn"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+            //Technical
+            case "Robowars":
+                Picasso.with(this).load("http://i.imgsafe.org/437e486f73.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "The futuristic version of UFC with robots duelling it out in the " +
+                        "ring, competing to be the best in strength, will and engineering prowess.\n" +
+                        "Each team must have 2 members.\n" +
+                        "Prizes worth 35k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Robowars"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Trial By Combat":
+                Picasso.with(this).load("http://i.imgsafe.org/437e78ff92.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Game of Thrones freaks! " +
+                        "An event not falling short of the battle between Sandor Clegane and " +
+                        "Oberyn Martell, watch teams fight it out in the ring with swords and " +
+                        "shields. Well, there's no Neil Nitin Mukesh.\n" +
+                        "One on one event.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Trial By Combat"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Code Uncode":
+                Picasso.with(this).load("http://i.imgsafe.org/437b0a8979.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Do you have a smart eye in finding out meaning in utter garble?\n" +
+                        "Do codes intrigue you into finding a solution?\n" +
+                        "Can you crack the Da Vinci code and discover the Holy Grail?\n" +
+                        "If yes, Code Uncode invites you all!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Code Uncode"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+
+            case "Roborace":
+                Picasso.with(this).load("http://i.imgsafe.org/437de9d98d.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Can your robot jump hurdles and sprint?\n" +
+                        "Its time to assemble your mechanical Usain Bolts at the start of the track.\n" +
+                        "Each team must have 2 members.\n" +
+                        "Prizes worth 20k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Roborace"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Robotics Workshop":
+                Picasso.with(this).load("http://i.imgsafe.org/437dee7586.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "TRINITY presents a Robotics Workshop for all you beginner tinkerers to learn how to delve into the world of bots.\n" +
+                        "Here you can learn to build, right from scratch, bots like Line Follower, Obstacle Follower and Temperature Sensor.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Robotics Workshop"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Robo-Football":
+                Picasso.with(this).load("http://i.imgsafe.org/437df0471d.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Test the skills of your robot on the football field and find the " +
+                        "automated Messi and CR7.\n" +
+                        "Each team must have 2 members.\n" +
+                        "Prizes worth 20k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Robo-Football"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Stock Market":
+                Picasso.with(this).load("http://i.imgsafe.org/437e1cd22e.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Place your bets well in this trading game. Short your profits and cut your losses well and be the Ambani of Trinity.\n" +
+                        "Prizes worth 5k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Stock Market"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Laser Tag":
+                Picasso.with(this).load("http://i.imgsafe.org/437c6c65dc.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+
+                description = "Are you Counter Strike fiend? Test your skills in the real " +
+                        "world with lasers and limited lives.\n" +
+                        "Each team must have 4-5 members.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Laser Tag"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: DJ Sanghvi\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                //contact = "Siddharth Kharbanda: 9167793501";
+                break;
+
+            case "Flex and Mascot":
+                Picasso.with(this).load("http://i.imgsafe.org/437b90b0e5.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Sit back and enjoy the spectacular war between the departments," +
+                        " as they put forth creativity and intellect, in the form of a Mascot and Flex!\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Flex and Mascot"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                noNotif = true;
+                break;
+
+            case "TechExpo":
+                Picasso.with(this).load("http://i.imgsafe.org/437e695fac.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "The TechExpo of DJSCE caters to the technical aspect of Trinity and " +
+                        "provides a stage to innovation, " +
+                        "ideas and intelligence to shape a better future with technology right " +
+                        "at out fingertips.\n" +
+                        "Each team must have 4 members.\n" +
+                        "Prizes worth 40k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("TechExpo"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Technical Paper Presentation":
+                Picasso.with(this).load("http://i.imgsafe.org/437e2ef0b3.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Technical Paper Presentations are the best way to showcase " +
+                        "your talents in research and development and that too in front of some of " +
+                        "the most renowned and highly qualified judges in the field of engineering.\n" +
+                        "Each team must have 4 memebrs.\n" +
+                        "Prizes worth 70k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Technical Paper Presentation"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "LAN Gaming":
+                Picasso.with(this).load("http://i.imgsafe.org/437c7a4223.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "FIFA, Counter Strike, Dota- which game are you the best at? " +
+                        "Prove your worth against the best oppositions as you face off on Lan servers.\n" +
+                        "Counter Strike: 5 members in a team.\n" +
+                        "FIFA 14: One on one.\n" +
+                        "Need For Speed-Most Wanted 2: One on one.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("LAN Gaming"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "IC Engine Car Race":
+                Picasso.with(this).load("http://i.imgsafe.org/437bf72ad3.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Go-Karting fans, F1 fans? This is the ultimate event for all " +
+                        "the engineers who are racing fanatics. Watch miniature prototypes and " +
+                        "models screech on the tarmac and burn asphalt with the grit to " +
+                        "cross the finish line before the rest.\n";
+
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("IC Engine Car Race"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                noNotif = true;
+                break;
+
+            case "Junkyard Wars":
+                Picasso.with(this).load("http://i.imgsafe.org/437c2451b1.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Assemble your 9 pieces of 8 and raise your own Calypso to get " +
+                        "your own territory in the war of best out of waste.\n" +
+                        "Each team must have 2 members.\n" +
+                        "Prizes worth 5k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Junkyard Wars"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Technical Attractions":
+                Picasso.with(this).load("http://blog.caranddriver.com/wp-content/uploads/2015/11/BMW-2-series.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Technical";
+                description = "Visiting Trinity this year maybe your best fest decision.\n" +
+                        "Catch a glimpse of the Laser Harp, playing music on invisible strings,\n" +
+                        "The Depolarised Monitor, to watch a display with a special set of glasses, and many more.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Technical Attractions"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+            //Sports
+            case "Snookball":
+                Picasso.with(this).load("http://i.imgsafe.org/437e4e6292.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "Battle it out with your FUT team in the box, " +
+                        "for pride, for honor and for respect. Will it be the defence, " +
+                        "the midfield, the attack or the referees which take you to the top of the table.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Snookball"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: DJ Sanghvi\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                //  contact = "Sonali Varadam: 9022243052";
+                break;
+
+            case "Inter-Department Sports Day":
+                Picasso.with(this).load("http://i.imgsafe.org/437e4b4f30.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "Watch the 7 departments battle it out with grit and determination" +
+                        " as their athletic abilities are put to test!\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Inter-Department Sports Day"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: DJ Sanghvi\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                // contact = "Contact the registration desk for more details.";
+                noNotif = true;
+                break;
+
+            case "Rink Football":
+                Picasso.with(this).load("http://i.imgsafe.org/437cf68014.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "Our life is a game of football, we are the players, trying to convert opportunities into goals!\n" +
+                        "Philosophical much? Don't worry, we've got the sport.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Rink Football"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: DJ Sanghvi\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                // contact = "Contact the registration desk for more details.";
+                break;
+
+            case "Box Cricket":
+                Picasso.with(this).load("http://i.imgsafe.org/437a75d620.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "Amidst all the out-of-the-box events, this one has to be played inside the box, like literally.\n" +
+                        " Introducing to you, a unique form of cricket, the Box Cricket!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Box Cricket"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Angry Birds":
+                Picasso.with(this).load("http://i.imgsafe.org/437a50b602.png").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Cultural";
+                description = "You would be forgiven to think that concept of a life sized version of Angry birds would be a logical impossibility.\n" +
+                        " We here at Trinity bring that dream to reality by pairing basic elements from the game and blowing it up to a life sized model!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Angry Birds"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Target Shooting":
+                Picasso.with(this).load("http://i.imgsafe.org/437e4b4f30.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "Ever wanted to hold a rifle and fire a bullet. Ever felt the exhilaration and the rush after pulling the trigger?\n" +
+                        "Target shooting bring you all these experiences.\n" +
+                        "It's all a test accuracy, focus and having a hawk's eye.\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Target Shooting"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: DJ Sanghvi\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                //contact = "Aishwarya Acharya: 9619729561";
+                break;
+
+            case "Mini-Golf Course":
+                Picasso.with(this).load("http://i.imgsafe.org/437cb035e5.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "Putt your way through fun-filled holes of 3D designed courses with elevated platforms, bunkers, bridges and many more exciting obstacles !";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Mini-Golf Course"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Raftaar":
+                Picasso.with(this).load("http://i.imgsafe.org/437dcaec24.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+                    }
+                });
+                header = "Sports";
+                description = "Put your endurance to test if you think you can sustain a prolonged athletic output by partaking in this event!\n" +
+                        "Dash your way through this course full of challenging obstacles that'll make you push your limits.\n" +
+                        "Prizes worth 5k to be won!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Raftaar"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: JRM Grounds\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                //   contact = "Nikunj Waghasia: 9172808923";
+                break;
+
+            case "Sumo Wrestling":
+                Picasso.with(this).load("http://i.imgsafe.org/437e3a0ea1.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "For once,being fat is awesome!\n" +
+                        "Use your strength,speed and reach to knock your opponent out of the circle in the oldest of wrestling sport.\n" +
+                        "One on One event.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Sumo Wrestling"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: JRM Grounds\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                // contact = "Parag Jain: 9699054808";
+                break;
+
+            case "Glow Cricket":
+                Picasso.with(this).load("http://i.imgsafe.org/437bac69b8.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "What's better than cricket?\n" +
+                        "Glow-in-dark cricket. Where you and your team get to play a neon themed match. For once,bad light doesn't stop play.\n" +
+                        "Each team must have 5 members.";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Glow Cricket"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                    }
+                }
+                date = "Place: JRM Grounds\n" +eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                // contact = "Kushagra Shah: 9820083571";
+                break;
+
+            case "Amazing Race":
+                Picasso.with(this).load("http://blog.caranddriver.com/wp-content/uploads/2015/11/BMW-2-series.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "What do you get when you add people who love to travel, and pit them against each other to complete the journey in the quickest time possible, all this while completing the said task at hand?\n" +
+                        "You get The Amazing Race.\n" +
+                        "Each team must have 2 members.\n";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Amazing Race"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                break;
+
+            case "Trinity Sports":
+                Picasso.with(this).load("http://blog.caranddriver.com/wp-content/uploads/2015/11/BMW-2-series.jpg").into(new com.squareup.picasso.Target() {
+
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        // mainLayout.setBackground(new BitmapDrawable(context.getResources(), bitmap));
+                        img.setBackgroundDrawable(new BitmapDrawable(getApplicationContext().getResources(), bitmap));
+                    }
+
+                    @Override
+                    public void onBitmapFailed(final Drawable errorDrawable) {
+                        Log.d("TAG", "FAILED");
+                        img.setBackgroundResource(R.drawable.error);
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(final Drawable placeHolderDrawable) {
+                        Log.d("TAG", "Prepare Load");
+                        img.setBackgroundResource(R.drawable.loading);
+
+                    }
+                });
+                header = "Sports";
+                description = "A variety of sports and games await you at Trinity Sports, open for everyone.\n" +
+                        "Participate in any and all sports you can think of and win big!";
+                for(int i=0;i<Attractions.eventList.length;i++)
+                {
+                    if(Attractions.eventList[i].equals("Trinity Sports"))
+                    {
+                        contact=Attractions.event_coordarray[i];
+                        event_coordno=Attractions.event_coord_noarray[i];
+                        eventday=Attractions.eventListDay[i];
+                        eventmonth=Attractions.eventListMonth[i];
+                        price=Attractions.eventprice[i];
+                        venue=Attractions.eventvenue[i];
+                        Desc=Attractions.descrip[i];
+
+                    }
+                }
+                date = venue ;
+                textviewdate=eventday+ " " + geteventmonth(eventmonth) + " 2017";
+                noNotif = true;
+                break;
+
+            default:
+                header = "Random";
+                description = "Coming Soon";
+                date = "Place: DJ Sanghvi\n" +
+                        "Date: Coming Soon";
+                // contact = "Name: Number\n";
+                break;
+        }*/

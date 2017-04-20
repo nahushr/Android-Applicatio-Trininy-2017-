@@ -1,0 +1,918 @@
+package in.djtrinity.www.trinity;
+
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.support.v4.app.Fragment;
+import android.os.Bundle;
+import android.support.v4.view.ViewPager;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+import static in.djtrinity.www.trinity.Attractions.events;
+
+public class ScheduleFragment extends Fragment {
+    MoviesAdapter mAdapter;
+    private List<Movie> movieList = new ArrayList<>();
+    String eventday, eventmonth, datestr, event_type = "default";
+    public static Date[] dates = new Date[55];
+    EventDetailsActivity obj = new EventDetailsActivity();
+    String str="";
+    TextView tv;
+
+
+    RecyclerView recyclerView;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_schedule, container, false);
+
+
+        recyclerView = (RecyclerView) view.findViewById(R.id.recycle);
+
+
+        mAdapter = new MoviesAdapter(movieList);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(mAdapter);
+
+
+        prepareMovieData();
+        recyclerView.addOnItemTouchListener(new TechActivity.RecyclerTouchListener(getContext(), recyclerView, new TechActivity.ClickListener() {
+            @Override
+            public void onClick(View viewx, int position) {
+                tv = (TextView) viewx.findViewById(R.id.title);
+                str = tv.getText().toString();
+
+                for (int i = 0; i < EventDetailsActivity.CulturalDataName.length; i++) {
+                    if (str.equalsIgnoreCase(EventDetailsActivity.CulturalDataName[i])) {
+                        CulturalActivity.e_name = EventDetailsActivity.CulturalDataName[i];
+                        Intent in=new Intent(getActivity(),EventDetailsActivity.class);
+                        startActivity(in);
+                    }
+                }
+                for (int i = 0; i < EventDetailsActivity.TechDataName.length; i++) {
+                    if (str.equalsIgnoreCase(EventDetailsActivity.TechDataName[i])) {
+                        CulturalActivity.e_name = EventDetailsActivity.TechDataName[i];
+                        Intent in=new Intent(getActivity(),EventDetailsActivity.class);
+                        startActivity(in);
+                    }
+                }
+                for (int i = 0; i < EventDetailsActivity.SportsDataName.length; i++) {
+                    if (str.equalsIgnoreCase(EventDetailsActivity.SportsDataName[i])) {
+                        CulturalActivity.e_name = EventDetailsActivity.SportsDataName[i];
+                        Intent in=new Intent(getActivity(),EventDetailsActivity.class);
+                        startActivity(in);
+                    }
+                }
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        }));
+
+        /*ScheduleAdapter adapter = new ScheduleAdapter(getActivity(), getScheduleData());
+        recyclerView.setAdapter(adapter);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        if (Attractions.scheduleReturnFlag)
+            linearLayoutManager.scrollToPosition(ScheduleAdapter.positionSelected);
+        recyclerView.setLayoutManager(linearLayoutManager);*/
+        return view;
+    }
+
+    private void prepareMovieData() {
+        DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+        for (int i = 0; i < events.length; i++) {
+            String startDateString = Attractions.eventListMonth[i] + "/" + Attractions.eventListDay[i] + "/" + "2017";
+            Log.d("startdatestring ", startDateString);
+            try {
+                Date startDate = df.parse(startDateString);
+                dates[i] = startDate;
+                Log.d("startdate", startDate.toString());
+                Log.d("dates", dates[i].toString());
+            } catch (Exception e) {
+                System.err.println(e);
+            }
+
+        }
+        Date temp;
+        String temp_event;
+        for (int i = 0; i < events.length; i++) {
+            for (int j = i + 1; j < events.length; j++) {
+                if (dates[i].after(dates[j])) {
+                    temp = dates[i];
+                    dates[i] = dates[j];
+                    dates[j] = temp;
+
+                    temp_event = events[i];
+                    events[i] = events[j];
+                    events[j] = temp_event;
+
+                }
+            }
+        }
+
+        for (int j = 0; j < events.length; j++) {
+           /* for(int i=0;i<TechActivity.TechData.length;i++)
+            {
+                event_type="Cultural";
+                if(Attractions.events[i].equalsIgnoreCase("Outhouse Treasure Hunt"))
+                {
+                    eventday=Attractions.eventListDay[i];
+                    eventmonth=Attractions.eventListMonth[i];
+                    datestr=eventday+ " " + obj.geteventmonth(eventmonth) + " 2017";
+                }
+            }*/
+            switch (events[j]) {
+                //Cultural
+                case "Outhouse Treasure Hunt":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Outhouse Treasure Hunt")) {
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    break;
+
+                case "Fresher's Party":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Fresher's Party")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    break;
+
+                case "Concert Night":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Concert Night")) {
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    break;
+
+                case "Inter-Department Dance":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Inter-Department Dance")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+
+                    break;
+
+                case "Battleship":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Battleship")) {
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    break;
+
+                case "DJGT":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("DJGT")) {
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+
+                    break;
+
+                case "VCJA":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("VCJA")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    break;
+
+                case "Haunted House":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Haunted House")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Shreya Shetty: 9833469340";
+                    break;
+
+                case "Street Play":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Street Play")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Rushi Maniar: 9969387898";
+                    break;
+
+                case "DJ MUN":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("DJ MUN")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Contact the registration desk for more details.";
+                    break;
+
+                case "Murder Mystery":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Murder Mystery")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Vinil Punjani: 9920020293";
+                    break;
+
+                case "Chain Reaction":
+                    event_type = "Technical";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Chain Reaction")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Dinesh Tripathi: 8286968454";
+                    break;
+
+                case "Stand-Up Comedy":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Stand-Up Comedy")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Prianjana Singh: 99004027783";
+                    break;
+
+                case "Musician's War":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Musician's War")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = "Place: DJ Sanghvi\n" + eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Pratik Jayarao: 9619843933";
+                    break;
+
+                case "Escape The Room":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Escape The Room")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Ahmed Momin: 9167608490";
+                    break;
+
+                case "Debate":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Debate")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Contact the registration desk for more details.";
+                    break;
+
+                case "Quiz":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Quiz")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = "Place: DJ Sanghvi\n" + eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Contact the registration desk for more details.";
+                    break;
+
+                case "Mr & Ms Trinity":
+                    event_type = "Cultural";
+
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Mr & Ms Trinity")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Saniya Mehta: 9920194922";
+                    break;
+
+                case "Short Film Fest":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Short Film Fest")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Romil Shah: 9969279848";
+                    break;
+
+                case "Photography":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Photography")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Alankar Aparajit: 9820066476";
+                    break;
+
+                case "MasterChef":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("MasterChef")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Pranali Mane: 9702342246";
+                    break;
+
+                case "Just A Minute (JAM)":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Just A Minute (JAM)")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Neha Joshi: 9619832823";
+                    break;
+
+                case "Graffiti":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Graffiti")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Raj Patel: 9820112796";
+                    break;
+
+                case "Beg Borrow Steal":
+                    event_type = "Cultural";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Beg Borrow Steal")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Saurav Yadav: 9594103420";
+                    break;
+
+                case "Karaoke":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Karaoke")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Priyanka Kothari: 9757073787";
+                    break;
+
+                case "Fine Arts":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Fine Arts")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = "Place: DJ Sanghvi\n" + eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Dashank Gohil: 9920635585";
+                    break;
+
+                case "Mad Ad":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Mad Ad")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Swapnel Desai: 8879083085";
+                    break;
+
+                case "Silent Disco":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Silent Disco")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Contact the registration desk for more details.";
+                    break;
+
+                case "Brain 'N Brawn":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Brain 'N Brawn")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Aishwarya Acharya: 9619729561";
+                    break;
+                //Technical
+                case "Robowars":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Robowars")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Angelo Francis: 7208033526";
+                    break;
+
+                case "Trial By Combat":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Trial By Combat")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Pratik Tolani: 9769487632";
+                    break;
+
+                case "Code Uncode":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Code Uncode")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Contact the registration desk for more details.";
+                    break;
+
+
+                case "Roborace":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Roborace")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+
+                    //contact = "Dinesh Tripathi: 8286968454";
+                    break;
+
+                case "Robotics Workshop":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Robotics Workshop")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Contact the registration desk for more details.\n" +
+                    //       "Vatsal: 9096622846\n" +
+                    //     "Mihin: 9920057737";
+                    break;
+
+                case "Robo-Football":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Robo-Football")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Arsalan Sheikh: 8451863384";
+                    break;
+
+                case "Stock Market":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Stock Market")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Darshit Parekh: 9619001610";
+                    break;
+
+                case "Laser Tag":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Laser Tag")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = "Place: DJ Sanghvi\n" + eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Siddharth Kharbanda: 9167793501";
+                    break;
+
+                case "Flex and Mascot":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Flex and Mascot")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //  contact = "Contact the registration desk for more details.";
+                    //noNotif = true;
+                    break;
+
+                case "TechExpo":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("TechExpo")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Jash Singhania: 7303810024";
+                    break;
+
+                case "Technical Paper Presentation":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Technical Paper Presentation")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Rishab Haria: 9930804022";
+                    break;
+
+                case "LAN Gaming":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("LAN Gaming")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "V Patel: 9833702255";
+                    break;
+
+                case "IC Engine Car Race":
+                    event_type = "Technical";
+
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("IC Engine Car Race")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Contact the registration desk for more details.\n" +
+                    //      "Ahmed Momin: 9167608490";
+                    // noNotif = true;
+                    break;
+
+                case "Junkyard Wars":
+                    event_type = "Technical";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Junkyard Wars")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Parag Jain: 9699054808";
+                    break;
+
+                case "Technical Attractions":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Technical Attractions")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Contact the registration desk for more details.";
+                    break;
+                //Sports
+                case "Snookball":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Snookball")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //  contact = "Sonali Varadam: 9022243052";
+                    break;
+
+                case "Inter-Department Sports Day":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Inter-Department Sports Day")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Contact the registration desk for more details.";
+                    //noNotif = true;
+                    break;
+
+                case "Rink Football":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Rink Football")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Contact the registration desk for more details.";
+                    break;
+
+                case "Box Cricket":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Box Cricket")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //  contact = "Contact the registration desk for more details.";
+                    break;
+
+                case "Angry Birds":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Angry Birds")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Noopur Bapardakar: 9987844462";
+                    break;
+
+                case "Target Shooting":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Target Shooting")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Aishwarya Acharya: 9619729561";
+                    break;
+
+                case "Mini-Golf Course":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Mini-Golf Course")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //contact = "Kushagrah Shah: 9820083571";
+                    break;
+
+                case "Raftaar":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Raftaar")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    //   contact = "Nikunj Waghasia: 9172808923";
+                    break;
+
+                case "Sumo Wrestling":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Sumo Wrestling")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Parag Jain: 9699054808";
+                    break;
+
+                case "Glow Cricket":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Glow Cricket")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Kushagra Shah: 9820083571";
+                    break;
+
+                case "Amazing Race":
+                    event_type = "Sports";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Amazing Race")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Kumpal Dhruv: 9167269077";
+                    break;
+
+                case "Trinity Sports":
+                    event_type = "Cultural";
+                    for (int i = 0; i < Attractions.eventList.length; i++) {
+                        if (Attractions.eventList[i].equals("Trinity Sports")) {
+
+                            eventday = Attractions.eventListDay[i];
+                            eventmonth = Attractions.eventListMonth[i];
+                        }
+                    }
+                    datestr = eventday + " " + obj.geteventmonth(eventmonth) + " 2017";
+                    // contact = "Soumya Mahuvakar: 9833635101";
+                    // noNotif = true;
+                    break;
+
+                default:
+                    datestr = "ksjdfn";
+                    // contact = "Name: Number\n";
+                    break;
+            }
+            Movie movie = new Movie(events[j], event_type, datestr);
+            movieList.add(movie);
+        }
+
+
+        mAdapter.notifyDataSetChanged();
+    }
+}

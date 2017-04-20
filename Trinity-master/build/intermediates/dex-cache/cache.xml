@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-10.0.1_a1a79895c88a2dc31ef20ac736e7651222e517dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.1.1_c2e4051de9836331dbee066c98349fa46da58922\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_79738b0cf27a307e7e605a2601f0774b7a8eff3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.1_beadf3ffdcf11ce3b190654be3ffd964946a7b7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.0.1_ae6de73d34f1a2b14f5666632b1f353cc37945a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_5b453a81d921566b58c6be5b35856d84ab3bb892\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.1\f5aa318bda4c6c8d688c9d00b90681dcd82ce636\httpcore-4.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpcore-4.4.1_c72a5bcf2c5accd78843152ec5875f0a096ebc40\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.0.1_17a573ba67c0b26260514ed4ba8cd0feb20221f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.0.1_a90d17f842b45a0d1a2fa5ca14da6c564b5c9c62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-10.0.1_8b3c108900c9594fafe7a77e6b7aadb1ff89f907\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.0.1_23032273a562ea5be87bac889f4a565056d8ef8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_10ec2b80b12ac9dc14363ed9c3f76de2ca15f888\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.wang.avi\library\2.1.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wang.avi-library-2.1.3_827c03cbf7fb1055befbcd15fd9db90c97a2d9ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-10.0.1_a1a79895c88a2dc31ef20ac736e7651222e517dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.1_b12706ddbfa4c656d0864e35bcb9fc1e9384f01f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.0.1_4bb89e2379fd413b41158b681df4d11ff67e0433\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_db85c92979cc1de6635d1615ac55d4cb7669d823\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.0.1_171fece4c89115a4e8b2bcff106c70b0cef5855d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_79738b0cf27a307e7e605a2601f0774b7a8eff3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.1\2287494d4f5f9f3a9a2bb6980e3f32053721b315\core-3.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.1_8415833f596b64032bce75ca4d0adc42ffd2b594\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-10.0.1_8b3c108900c9594fafe7a77e6b7aadb1ff89f907\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.1.1_c2e4051de9836331dbee066c98349fa46da58922\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.0.1_17a573ba67c0b26260514ed4ba8cd0feb20221f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.0.1_56b88921ef937433b9748027b13c6804250576b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.1_b12706ddbfa4c656d0864e35bcb9fc1e9384f01f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_5b453a81d921566b58c6be5b35856d84ab3bb892\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-10.0.1_f8e5ef96cbdeacfcc599a9c9b44b2b19345c1532\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_e9ed03858e079cd7aacd6deb9b145fbded6b86d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_10ec2b80b12ac9dc14363ed9c3f76de2ca15f888\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-10.0.1_d63179d818bc6b0c12ef76e7347995133713bca5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-appindexing-10.0.1_5f88be031e45ffbc4b4b1d0c6a8873abc32c757d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.0.1_ee9b1cfaa1fffaaa6c3bc03b9ad582df913ca27a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mcxiaoke.volley-library-aar-1.0.0_ee2f1905321e77244c9f36dd49e524f141d0a1cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.0.1_171fece4c89115a4e8b2bcff106c70b0cef5855d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-10.0.1_08eaebfca685d45c961585125c017e975a95bcf6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.1_3efef7790790480cdf0c393ea5ea558ac2ed09ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\libs\commons-net-3.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e984db9554728564d58e90da5d90eff8ae8cf2d">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\commons-net-3.4_7e1b4e9eb4f7d0434d0295b54eb34da5b1e25843\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_e9ed03858e079cd7aacd6deb9b145fbded6b86d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-10.0.1_85f6d4c6db2d76a8a2bb2c5f681fef482c920f1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.0.1_0d557ba80982f6c68e9a81d9df698e1624ccfbfe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-10.0.1_d0fa86afd308dea541cd076814f248b9d8101bc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.1.1_38f46c62cc9f1ad25b89adf592ddae7b8e5093a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.1_320aadf5912db0926e63a7e85b46adb5e416be34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-10.0.1_d63179d818bc6b0c12ef76e7347995133713bca5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.1.1_26acdac65298fd2dac934b85e2a53f1875d75eb1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.1.1_9e99143829f50492870e5b8a9ffc5d2ebebced29\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.0.1_ee9b1cfaa1fffaaa6c3bc03b9ad582df913ca27a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.1_beadf3ffdcf11ce3b190654be3ffd964946a7b7b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_87983c35b4db372945515c9190b431431800b6e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.0.1_d8410bf8791a2af0abab4d50a2e8572be33407b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.0.1_e2a5312adeaa7ca06ea4d56281f91b61e3ac3cb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\libs\commons-net-3.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e984db9554728564d58e90da5d90eff8ae8cf2d">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\commons-net-3.4_7e1b4e9eb4f7d0434d0295b54eb34da5b1e25843\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.1_3efef7790790480cdf0c393ea5ea558ac2ed09ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-10.0.1_508903eb45cb32156bf5a440728e44c9e726bfa9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-10.0.1_08eaebfca685d45c961585125c017e975a95bcf6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.0.1_a90d17f842b45a0d1a2fa5ca14da6c564b5c9c62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.1_d5f206afc891fe88417c915cdebf87ff37aa4470\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.1_320aadf5912db0926e63a7e85b46adb5e416be34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-10.0.1_85f6d4c6db2d76a8a2bb2c5f681fef482c920f1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.0.1_23032273a562ea5be87bac889f4a565056d8ef8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.1.1_26acdac65298fd2dac934b85e2a53f1875d75eb1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.1_a2ff1af6f7ece7756c8e0e0ab3008635466af6cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_99eef4c06152316fb7e8f4e60a0738914e03e251\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.0.1_48803d77f0bea1cd0c5b08cbd4de1dff546ec29a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_9cfd72f4d8514e87855624704f673c0f82dc685a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec11f2b892ff7c0123179b0b06515c4d04043f58">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b53bae9ab0feb7e2a5cd2bcffd74efcc5cbaccad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.1_f477bf78d5b71548600c8ae0c95eff83883caa98\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-10.0.1_508903eb45cb32156bf5a440728e44c9e726bfa9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.1_d5f206afc891fe88417c915cdebf87ff37aa4470\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.9\4244e2998018aa492389e8e30a77b7987959608e\MPAndroidChart-v2.0.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4244e2998018aa492389e8e30a77b7987959608e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.0.9_482f3dd9b6c83f012c9115b952bcd8ad0b898518\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.0.1_e2a5312adeaa7ca06ea4d56281f91b61e3ac3cb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.1_0c69e39e6884fb6ba2d62860d655ed376fda3670\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_be8b9736b8eba7f050b017c360fcf38517eb0a26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_094d634603cfbcbfa7291b5e459ff765ff06345b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_87983c35b4db372945515c9190b431431800b6e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.1_f477bf78d5b71548600c8ae0c95eff83883caa98\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.0.1_d8410bf8791a2af0abab4d50a2e8572be33407b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.dlazaro66.qrcodereaderview\qrcodereaderview\2.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6610b802e93de87301d1241bf4131509d959790">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.dlazaro66.qrcodereaderview-qrcodereaderview-2.0.1_eb9eb0c371a675ca9f3d426f9774e55be868a73a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.1_f5f21f78cb905d23f872e502abb3e85f39b69bb8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_99eef4c06152316fb7e8f4e60a0738914e03e251\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.1_a2ff1af6f7ece7756c8e0e0ab3008635466af6cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mcxiaoke.volley-library-aar-1.0.0_ee2f1905321e77244c9f36dd49e524f141d0a1cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_9cfd72f4d8514e87855624704f673c0f82dc685a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.0.1_d7515fc36df056cb39d7b32eea71c6a3fbaa7a8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.1_b716501e3011d4d7ba7438d493f2cd44c98703cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_be8b9736b8eba7f050b017c360fcf38517eb0a26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.1_0c69e39e6884fb6ba2d62860d655ed376fda3670\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.0.1_0d557ba80982f6c68e9a81d9df698e1624ccfbfe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.dlazaro66.qrcodereaderview\qrcodereaderview\2.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6610b802e93de87301d1241bf4131509d959790">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.dlazaro66.qrcodereaderview-qrcodereaderview-2.0.1_eb9eb0c371a675ca9f3d426f9774e55be868a73a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.1.1_9e99143829f50492870e5b8a9ffc5d2ebebced29\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-10.0.1_d0fa86afd308dea541cd076814f248b9d8101bc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.1.1_38f46c62cc9f1ad25b89adf592ddae7b8e5093a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-appindexing-10.0.1_5f88be031e45ffbc4b4b1d0c6a8873abc32c757d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.0.1_5ee5f89676121d2fcf339c9d3314e984ea07bb81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_db85c92979cc1de6635d1615ac55d4cb7669d823\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.1_8f869f5dc95135b054d1b74f7eb1088960b1bf55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.1\2287494d4f5f9f3a9a2bb6980e3f32053721b315\core-3.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.1_8415833f596b64032bce75ca4d0adc42ffd2b594\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_006cc95539a95b938b32006858fbf3982fde96d0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.1_e08817d30f859929abd845a53043503a180b941a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.0.1_4bb89e2379fd413b41158b681df4d11ff67e0433\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.1_ba975a65ecef611aa2947c42de7feab5dedf61c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.0.1_d7515fc36df056cb39d7b32eea71c6a3fbaa7a8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.0.1_a42d8349826e3380af7ede259fa52393efe5f8b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.1_b716501e3011d4d7ba7438d493f2cd44c98703cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.1_3852bc70d25efe74083c879674d29c9698aea118\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.0.1_80c254ba53b0fde98738b36df50d61faf331e974\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.1_ba975a65ecef611aa2947c42de7feab5dedf61c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.0.1_b3123a373d3acdfd516fc923649294ae129dc885\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.0.1_56b88921ef937433b9748027b13c6804250576b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.1_e08817d30f859929abd845a53043503a180b941a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_0fca8536700a74c1c1ccf3267cd4e6b28f0759cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.1_8f869f5dc95135b054d1b74f7eb1088960b1bf55\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_84cc991352a257ac4c733678cc835302fa8f862a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.1_5d7d49f60dd38b4ecdb8a77cdf75ecfa083bed26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.0.1_ae6de73d34f1a2b14f5666632b1f353cc37945a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_83200fd9b4d51e5d43bebbd91fab880f6315cecd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_094d634603cfbcbfa7291b5e459ff765ff06345b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-10.0.1_f8e5ef96cbdeacfcc599a9c9b44b2b19345c1532\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.0.1_5ee5f89676121d2fcf339c9d3314e984ea07bb81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.1_a29627d5aa7de0f5397a84929d5d3cc5e4ed6904\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.0.1_48803d77f0bea1cd0c5b08cbd4de1dff546ec29a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.0.1_2ba7f6c17adfc7542cac727d142042808363ca2b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_006cc95539a95b938b32006858fbf3982fde96d0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.0.1_a42d8349826e3380af7ede259fa52393efe5f8b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.1\f5aa318bda4c6c8d688c9d00b90681dcd82ce636\httpcore-4.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpcore-4.4.1_c72a5bcf2c5accd78843152ec5875f0a096ebc40\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.0.1_b3123a373d3acdfd516fc923649294ae129dc885\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.0.1_80c254ba53b0fde98738b36df50d61faf331e974\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.1_f5f21f78cb905d23f872e502abb3e85f39b69bb8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.0.1_2ba7f6c17adfc7542cac727d142042808363ca2b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cca889fc68d320f2ea2323eb28b7ac2bf3134f0">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_30f61f109ded098067ced3f2bf7db7071bc16a9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.1_3852bc70d25efe74083c879674d29c9698aea118\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.1_a29627d5aa7de0f5397a84929d5d3cc5e4ed6904\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.wang.avi\library\2.1.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wang.avi-library-2.1.3_827c03cbf7fb1055befbcd15fd9db90c97a2d9ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.9\4244e2998018aa492389e8e30a77b7987959608e\MPAndroidChart-v2.0.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4244e2998018aa492389e8e30a77b7987959608e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.0.9_482f3dd9b6c83f012c9115b952bcd8ad0b898518\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_84cc991352a257ac4c733678cc835302fa8f862a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.1_5d7d49f60dd38b4ecdb8a77cdf75ecfa083bed26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_83200fd9b4d51e5d43bebbd91fab880f6315cecd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\NAHUSH RAICHURA\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\NAHUSH RAICHURA\AndroidStudioProjects\Trinity-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_0fca8536700a74c1c1ccf3267cd4e6b28f0759cd\classes.dex" />
+    </item>
+
+</items>
